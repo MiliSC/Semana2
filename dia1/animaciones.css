@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    
+}
+
+.texto-animado{
+    /* animación esta compuesto por un nombre y un tiempo - iteracción */
+    animation-name: texto-volador;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    border: solid;
+}
+
+/* @keyframes texto-volador {
+    from{
+        margin-left: 100%;
+        width: 300%;
+        background-color: red;
+        border:none;
+    }
+    to{
+        margin-left: -100%;
+        background-color:blue;
+        color: white;
+        border: none;
+    }
+} */
+
+.imagen-animada{
+    animation-name: imagen-resize;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    width: 100px;
+    height: 100px;
+}
+
+/* @keyframes imagen-resize{
+    from{
+        width: 200px;
+        height: 200px;
+    }
+    to{
+        width: 30px;
+        height: 30px;
+    }
+} */
+
+.imagen{
+    margin-left: 30px;
+    margin-top: 40px;
+    border-color: black;
+    border: solid 5px;
+    width: 300px;
+    height: 300px;
+
+    animation-name: multicolor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+}
+@keyframes multicolor{
+0%{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png);
+}
+50%{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png);
+}
+100%{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png);
+}
+
+}
